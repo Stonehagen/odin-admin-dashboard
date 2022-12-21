@@ -5,6 +5,7 @@
     --dark-font-color: #1c1917; 
 
     color: var(--dark-font-color);
+    
 }
 
 h3,
@@ -22,7 +23,7 @@ body {
 .container {
     display: grid;
     grid-template-columns: 150px 1fr;
-    grid-template-rows: 150px 1fr;
+    grid-template-rows: 105px 1fr;
     grid-template-areas:
                         "sidebar header"
                         "sidebar main";
@@ -35,7 +36,27 @@ body {
     gap: 35px;
     background-color: var(--main-color);
     color: var(--light-font-color);
+    padding: 10px;
 }
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.sidebar-header h3 {
+    font-size: 16px;
+}
+
+.sidebar-header .logo {
+    height: 30px;
+}
+
+.sidebar ul .logo {
+    height: 16px;
+}
+
 
 .sidebar ul {
     list-style: none;
@@ -43,13 +64,24 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
+    justify-content: center;
 }
+
+.sidebar li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 
 .header {
     grid-area: header;
     display: grid;
-    gap: 25px;
+}
+
+.header .logo {
+    height: 16px;
 }
 
 .header-row {
@@ -62,6 +94,9 @@ body {
 
 .search {
     flex-grow: 1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .search input {
@@ -76,7 +111,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
+}
+
+.profil-pic {
+    background-color: green;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%
 }
 
 .greeting {
@@ -86,15 +128,20 @@ body {
     flex-grow: 1;
 }
 
+.greeting .profil-pic {
+    height: 50px;
+    width: 50px;
+}
+
 .header-controls {
     display: flex;
     gap: 15px;
 }
 
 .header-controls button {
-    border-radius: 10px;
+    border-radius: 12px;
     width: 50px;
-    height: 20px;
+    height: 24px;
     font-size: 9px;
     border: none;
     background-color: var(--main-color);
