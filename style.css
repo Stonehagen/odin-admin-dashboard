@@ -18,8 +18,8 @@ p {
 
 .sidebar {
     grid-area: sidebar;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-auto-rows: min-content;
     gap: 35px;
 }
 
@@ -34,8 +34,7 @@ p {
 
 .header {
     grid-area: header;
-    display: flex;
-    flex-direction: column;
+    display: grid;
     gap: 25px;
 }
 
