@@ -1,3 +1,34 @@
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url(fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url(fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Roboto-Italic";
+    src: url(fonts/Roboto-Italic.ttf);
+}
+
+@font-face {
+    font-family: "Roboto-Black";
+    src: url(fonts/Roboto-Black.ttf);
+}
+
+@font-face {
+    font-family: "Roboto-Light";
+    src: url(fonts/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: "Roboto-Medium";
+    src: url(fonts/Roboto-Medium.ttf);
+}
+
+
 :root {
     --main-color: #059669;
     --light-background-clor: #d6d3d1;
@@ -5,16 +36,24 @@
     --dark-font-color: #1c1917; 
 
     color: var(--dark-font-color);
-    
+
+    font-family: Roboto-Regular, sans-serif;
 }
 
 h3,
 h4,
 h5,
-h6,
+h6 {
+  font-family: Roboto-Bold;  
+  margin: 0;
+}
+
 p {
+    font-family: Roboto-Light;
     margin: 0;
 }
+
+
 
 body {
     margin: 0;
@@ -47,6 +86,7 @@ body {
 
 .sidebar-header h3 {
     font-size: 16px;
+
 }
 
 .sidebar-header .logo {
@@ -126,6 +166,12 @@ body {
     align-items: center;
     gap: 20px;
     flex-grow: 1;
+}
+
+.greeting-text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 .greeting .profil-pic {
