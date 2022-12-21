@@ -173,12 +173,12 @@ body {
 .greeting-text {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 2px;
 }
 
 .greeting .profil-pic {
-    height: 50px;
-    width: 50px;
+    height: 45px;
+    width: 45px;
 }
 
 .header-controls {
